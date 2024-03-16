@@ -1,4 +1,24 @@
-# React Roadmap
+# React Developer Roadmap (WIP)
+
+## Welcome!
+
+Welcome to the React Developer Roadmap! This interactive guide is designed to help aspiring and experienced React developers navigate their learning journey and excel in the React ecosystem.
+
+## Important Note:
+
+🚧 **Work in Progress**: This roadmap is continually evolving, with new content added and existing sections refined regularly. Stay tuned for updates!
+
+## How to Use This Roadmap:
+
+This roadmap is highly adaptable to your learning style and career goals. Feel free to explore topics in any order that suits you best.
+
+- **Beginner?** Start from the basics and gradually progress to advanced concepts.
+- **Experienced?** Dive into specific topics or areas where you want to enhance your skills.
+- **Have Feedback or Suggestions?** We value your input! Share your thoughts, report errors, or suggest improvements via:
+  - Creating a new issue on the [GitHub repository](https://github.com/roshandroids/react_roadmap/issues).
+  - Submitting a pull request (PR) with your proposed changes.
+
+Let's embark on this exciting journey together and build amazing things with React!
 
 The topics are taken and article is generated based on roadmap listed on [https://roadmap.sh/react](https://roadmap.sh/react).
 
@@ -38,11 +58,11 @@ Vite is a modern build tool specifically designed to **enhance the development e
   > - **Concise Syntax:** Easier to write and understand compared to class components.
   > - **Presentational Components:** Ideal for displaying data and don't require complex state management.
   > - **Reusable:** Can be easily reused throughout the application.
-  > **When to Use:**
+  >   **When to Use:**
   >
   > - Building simple UI components that focus on rendering.
   > - Prefer a more streamlined development approach.
-  > **Example:**
+  >   **Example:**
   >
   > ```jsx
   > function Greeting(props) {
@@ -53,6 +73,7 @@ Vite is a modern build tool specifically designed to **enhance the development e
   >   );
   > }
   > ```
+  >
   > **Further Resources:**
   >
   > - React Documentation: [https://react.dev/learn/javascript-in-jsx-with-curly-braces](https://react.dev/learn/javascript-in-jsx-with-curly-braces)
@@ -62,11 +83,11 @@ Vite is a modern build tool specifically designed to **enhance the development e
   >
   > - **Intuitive UI Definition:** Resembles HTML, making it easier to visualize and write UI elements.
   > - **Dynamic Content:** Allows embedding JavaScript expressions for dynamic rendering.
-  > **When to Use:**
+  >   **When to Use:**
   >
   > - Defining the UI structure of React components.
   > - Mixing HTML-like elements with JavaScript logic for interactive components.
-  > **Example:**
+  >   **Example:**
   >
   > ```jsx
   > function Greeting(props) {
@@ -82,15 +103,15 @@ Vite is a modern build tool specifically designed to **enhance the development e
   >
   > - **Focus:** External data passed down from parent to child components.
   > - **Read-only:** Cannot be modified within the receiving component.
-  > **Why use Props:**
+  >   **Why use Props:**
   >
   > - **Data Sharing:** Enables components to receive data from their parents.
   > - **Component Reusability:** Promotes reusable components that can accept different props.
-  > **When to use Props:**
+  >   **When to use Props:**
   >
   > - Passing data from a parent component to its children.
   > - Defining configuration options for child components.
-  > **Example:**
+  >   **Example:**
   >
   > ```jsx
   > function Counter(props) {
@@ -102,6 +123,7 @@ Vite is a modern build tool specifically designed to **enhance the development e
   >   );
   > }
   > ```
+  >
   > **Further Resources:**
   >
   > - React Documentation (Props):
@@ -112,15 +134,15 @@ Vite is a modern build tool specifically designed to **enhance the development e
   >
   > - **Focus:** Internal data managed by a component that can change over time.
   > - **Mutable:** Can be updated using methods like `setState` within the component.
-  > **Why use State:**
+  >   **Why use State:**
   >
   > - **Dynamic UI:** Allows components to update their UI based on changes in internal data.
   > - **User Interaction:** Enables components to respond to user actions and update their state accordingly.
-  > **When to use State:**
+  >   **When to use State:**
   >
   > - Managing data that needs to be updated within a component based on user interactions or other events.
   > - Storing temporary data specific to a component.
-  > **Example:**
+  >   **Example:**
   >
   > ```jsx
   > function Counter() {
@@ -134,6 +156,7 @@ Vite is a modern build tool specifically designed to **enhance the development e
   >   );
   > }
   > ```
+  >
   > **Further Resources:**
   >
   > - React Documentation (State):
@@ -145,17 +168,17 @@ Vite is a modern build tool specifically designed to **enhance the development e
   >
   > - **Flexible UI:** Enables rendering of different content based on data, state, or user interactions.
   > - **Improved User Experience:** Allows tailoring the UI to specific situations, enhancing user engagement.
-  > **When to Use:**
+  >   **When to Use:**
   >
   > - Displaying content conditionally based on available data.
   > - Implementing interactive controls that affect the UI.
   > - Creating dynamic UIs that respond to user actions.
-  > **Methods:**
+  >   **Methods:**
   >
   > - **`if` Statements:** Traditional JavaScript `if` statements can be used within JSX to control rendering.
   > - **Ternary Operator:** The concise ternary operator can be used for simple conditional expressions.
   > - **Logical AND Operator (&&):** A shortcut for conditionally rendering elements based on a truthy value.
-  > **Example:**
+  >   **Example:**
   >
   > ```jsx
   > function Greeting(props) {
@@ -176,11 +199,12 @@ Vite is a modern build tool specifically designed to **enhance the development e
   >   }
   > }
   > ```
+  >
   > **Additional Notes:**
   >
   > - Conditional rendering is often combined with state management techniques (like `useState` or Redux) to manage the conditions that determine what gets rendered.
   > - React hooks like `useState` and `useEffect` provide convenient ways to manage state and trigger conditional re-renders.
-  > **Further Resources:**
+  >   **Further Resources:**
   >
   > - React Documentation:
   >
@@ -192,17 +216,17 @@ Vite is a modern build tool specifically designed to **enhance the development e
   > - **Modularization:** Breaks down complex UIs into manageable and reusable parts.
   > - **Code Maintainability:** Easier to understand, test, and modify individual components.
   > - **Improved Reusability:** Components can be used in multiple parts of the application.
-  > **When to Use:**
+  >   **When to Use:**
   >
   > - When building complex UIs that can be decomposed into smaller, well-defined units.
   > - To promote code reusability and reduce redundancy.
   > - To improve the organization and maintainability of a React application.
-  > **Mechanisms:**
+  >   **Mechanisms:**
   >
   > - **Props:** Components can pass data (props) to their children, enabling customization and data flow.
   > - **Nesting:** Components can be nested within other components to create hierarchical UI structures.
   > - **Higher-Order Components (HOCs):** Functions that take a component and return a new component with additional functionality (advanced technique).
-  > **Example:**
+  >   **Example:**
   >
   > ```jsx
   > function Button(props) {
@@ -231,11 +255,12 @@ Vite is a modern build tool specifically designed to **enhance the development e
   >   );
   > }
   > ```
+  >
   > **Additional Notes:**
   >
   > - Component composition is a fundamental principle in React development, enabling the creation of large and scalable applications.
   > - By using well-defined and reusable components, developers can focus on building specific functionalities without duplicating code.
-  > **Further Resources:**
+  >   **Further Resources:**
   >
   > - React Documentation:
   >
@@ -253,22 +278,24 @@ In React, rendering refers to the process of transforming your component's code 
   >
   > - **Description:** The component is first created and inserted into the DOM (Document Object Model).
   > - **Methods:**
+  >
   >   - `constructor` (Optional): Used for initialization tasks like binding event handlers.
   >   - `getDerivedStateFromProps` (Optional): Allows updating state based on incoming props (rarely used).
   >   - `render`: Returns the JSX that defines the component's UI.
   >   - `componentDidMount`: Invoked immediately after the component is inserted into the DOM, ideal for side effects like data fetching or subscriptions.
-  > **Updating:**
+  >     **Updating:**
   >
   > - **Description:** The component updates when its props or state change, triggering a re-render.
   > - **Method:**
+  >
   >   - `shouldComponentUpdate` (Optional): Controls whether a re-render should occur based on the updated props and state (often used for performance optimization).
   >   - `render`: Re-executed to reflect the updated state or props in the UI.
-  > **Unmounting:**
+  >     **Unmounting:**
   >
   > - **Description:** The component is removed from the DOM.
   > - **Method:**
   >   - `componentWillUnmount`: Invoked immediately before the component is unmounted, useful for cleaning up resources like subscriptions or timers.
-  > **Example:**
+  >     **Example:**
   >
   > ```jsx
   > class Counter extends React.Component {
@@ -295,12 +322,13 @@ In React, rendering refers to the process of transforming your component's code 
   >   }
   > }
   > ```
+  >
   > **Additional Notes:**
   >
   > - Understanding the component lifecycle is crucial for managing the state and behavior of components throughout their existence.
   > - Lifecycle methods provide hooks for performing specific actions at different stages.
   > - React provides additional lifecycle methods for handling specific scenarios (e.g., `getSnapshotBeforeUpdate`, `componentDidUpdate`).
-  > **Further Resources:**
+  >   **Further Resources:**
   >
   > - React Documentation:
   >
@@ -311,15 +339,15 @@ In React, rendering refers to the process of transforming your component's code 
   > **Relationship:**
   >
   > - **Props within Lists:** Individual list items can be components that receive props to customize their appearance or behavior.
-  > **Why Use Lists:**
+  >   **Why Use Lists:**
   >
   > - **Displaying Collections:** Efficiently render arrays or other data structures containing multiple items.
   > - **Dynamic Content:** Lists can be dynamically populated based on data received from APIs or managed within the application.
-  > **Key Concepts:**
+  >   **Key Concepts:**
   >
   > - **`map` Function:** A common method for iterating over an array and creating corresponding JSX elements for each item.
   > - **Keys:** Unique identifiers for each list item, crucial for performance optimization and React's reconciliation process.
-  > **Example:**
+  >   **Example:**
   >
   > ```jsx
   > import React from "react";
@@ -349,6 +377,7 @@ In React, rendering refers to the process of transforming your component's code 
   >   );
   > }
   > ```
+  >
   > **Further Resources:**
   >
   > - React Documentation (Lists and Keys):
@@ -361,11 +390,11 @@ In React, rendering refers to the process of transforming your component's code 
   >
   > - **Component Reusability:** Enables creating generic components that can be customized for different rendering needs.
   > - **Code Abstraction:** Hides the implementation details of child components from the parent, promoting separation of concerns.
-  > **When to Use:**
+  >   **When to Use:**
   >
   > - When the rendering logic needs to be dynamic and dependent on data or state managed by the parent component.
   > - For creating reusable components that provide a flexible way to customize their appearance or behavior.
-  > **How It Works:**
+  >   **How It Works:**
   >
   > 1. **Parent Component:**
   >    - Passes a function as a prop (often named `render`) to the child component.
@@ -373,7 +402,7 @@ In React, rendering refers to the process of transforming your component's code 
   > 2. **Child Component:**
   >    - Receives the `render` prop as an argument.
   >    - Uses the provided data or state within the `render` function to define the UI elements to be displayed.
-  > **Example:**
+  >      **Example:**
   >
   > ```jsx
   > function FancyButton(props) {
@@ -403,11 +432,12 @@ In React, rendering refers to the process of transforming your component's code 
   >   );
   > }
   > ```
+  >
   > **Additional Notes:**
   >
   > - While render props offer flexibility, they can sometimes lead to increased code complexity compared to traditional prop drilling or state management solutions.
   > - In modern React development, custom hooks are often preferred over render props for managing complex logic and state within components.
-  > **Further Resources:**
+  >   **Further Resources:**
   >
   > - React Legacy Documentation (Render Props):
   >
@@ -421,16 +451,16 @@ In React, rendering refers to the process of transforming your component's code 
   >
   > - **Direct DOM Manipulation:** Useful for situations where state and props alone are insufficient (e.g., focusing an input element, integrating with third-party DOM libraries).
   > - **Manual Measurements:** Can be used to access element dimensions or perform manual DOM manipulations.
-  > **When to Use Refs:**
+  >   **When to Use Refs:**
   >
   > - **Focus Management:** Programmatically focusing or blurring form elements.
   > - **Accessing DOM Nodes:** Working directly with DOM elements outside of React's rendering process (rarely used).
   > - **Integrating with Third-Party Libraries:** Interacting with libraries that rely on DOM manipulation.
-  > **Types of Refs:**
+  >   **Types of Refs:**
   >
   > 1. **String Refs (Legacy):** Deprecated approach where a ref is a string attached to a DOM element using a `ref` attribute.
   > 2. **Callback Refs:** Modern and preferred way where a ref is a function that receives the underlying DOM element or React component instance as an argument.
-  > **Example (Callback Ref):**
+  >    **Example (Callback Ref):**
   >
   > ```jsx
   > import React, { useRef } from "react";
@@ -452,11 +482,12 @@ In React, rendering refers to the process of transforming your component's code 
   >   );
   > }
   > ```
+  >
   > **Additional Notes:**
   >
   > - Refs provide an "escape hatch" from React's declarative rendering model, allowing for imperative DOM manipulation when necessary.
   > - Use refs judiciously, as over-reliance can lead to less predictable and maintainable code. In many cases, state management or custom hooks might offer better solutions.
-  > **Further Resources:**
+  >   **Further Resources:**
   >
   > React Documentation (Refs and the DOM):
   >
@@ -467,14 +498,14 @@ In React, rendering refers to the process of transforming your component's code 
   >
   > - **Interactive UIs:** Respond to user actions like clicks, key presses, form submissions, etc.
   > - **Dynamic Behavior:** Update the UI or trigger side effects based on user interactions.
-  > **Event Handlers:**
+  >   **Event Handlers:**
   >
   > - **Inline Functions:** Functions defined directly within JSX and passed as props (often used for simple event handling).
   > - **Separate Functions:** Functions defined outside of JSX and called within event handler attributes for better organization and reusability.
-  > **Synthetic Events:**
+  >   **Synthetic Events:**
   >
   > - React creates its own cross-browser wrapper events called Synthetic Events, ensuring consistent behavior across different browsers.
-  > **Common Event Types:**
+  >   **Common Event Types:**
   >
   > - `onClick`: Click event on an element.
   > - `onChange`: Change event for form elements (e.g., input, text-area).
@@ -482,10 +513,10 @@ In React, rendering refers to the process of transforming your component's code 
   > - `onFocus`: Focus event on an element.
   > - `onBlur`: Blur event when focus leaves an element.
   > - And many more...
-  > **Preventing Default Behavior:**
+  >   **Preventing Default Behavior:**
   >
   > - You can use `event.preventDefault()` to prevent the default behavior associated with an event (e.g., preventing form submission on button click).
-  > **Example:**
+  >   **Example:**
   >
   > ```jsx
   > function Button(props) {
@@ -498,34 +529,33 @@ In React, rendering refers to the process of transforming your component's code 
   >   return <button onClick={handleClick}>Click me</button>;
   > }
   > ```
+  >
   > **Additional Notes:**
   >
   > - Event handlers can access event information using the `event` object passed as an argument. This object contains properties like `target` (the element that triggered the event) and details specific to the event type.
   > - React supports event bubbling, where events propagate up the component hierarchy unless explicitly stopped.
-  > **Further Resources:**
+  >   **Further Resources:**
   >
   > - React Documentation (Handling Events): [https://reactjs.org/docs/handling-events.html](https://reactjs.org/docs/handling-events.html)
 - **High Order Functions and Components**
   > **Overview:** In the context of React, Higher-Order Components (HOCs) are a design pattern, not a built-in React feature. However, they leverage higher-order functions, which are a core JavaScript concept.
-  $**Higher-Order Functions (JavaScript)**$
-  > **Focus:** Functions that take a function as an argument and either return a new function or another value based on the provided function.
+  > $**Higher-Order Functions (JavaScript)**$ > **Focus:** Functions that take a function as an argument and either return a new function or another value based on the provided function.
   > **Why Use Them:**
   >
   > - **Abstraction:** Encapsulate common functionality and logic within reusable functions.
   > - **Code Reusability:** Promote writing generic functions that can operate on other functions.
   > - **Currying:** Create new functions with partially applied arguments (advanced technique).
-  > **Examples:**
+  >   **Examples:**
   >
   > 1. **`map` function:** Takes an array and a function as arguments, applies the function to each element in the array, and returns a new array with the results.
   > 2. **`filter` function:** Takes an array and a function as arguments, filters the array based on the function's return value (true for inclusion, false for exclusion), and returns a new array with the filtered elements.
-  $**Higher-Order Components (React)**$
-  > **Focus:** Functions that take a React component as an argument and return a new component that wraps the original component, potentially adding additional functionality or behavior.
-  > **Why Use Them:**
+  >    $**Higher-Order Components (React)**$ > **Focus:** Functions that take a React component as an argument and return a new component that wraps the original component, potentially adding additional functionality or behavior.
+  >    **Why Use Them:**
   >
   > - **Code Reusability:** Share common functionalities (e.g., authentication, logging) across different components without code duplication.
   > - **Separation of Concerns:** Decouple core component logic from concerns like authentication or state management.
   > - **Component Composition:** Create more complex components by combining simpler ones with HOCs.
-  > **Example:**
+  >   **Example:**
   >
   > ```jsx
   > function withAuthentication(WrappedComponent) {
@@ -558,11 +588,12 @@ In React, rendering refers to the process of transforming your component's code 
   > // Usage
   > <AuthProtectedComponent name="John" />;
   > ```
+  >
   > **Additional Notes:**
   >
   > - HOCs can accept additional arguments to customize their behavior.
   > - While HOCs offer benefits, overuse can lead to complex component hierarchies. Consider alternatives like custom hooks or render props in modern React development.
-  > **Further Resources:**
+  >   **Further Resources:**
   >
   > - Higher-Order Functions in JavaScript:
   >
@@ -584,7 +615,7 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >
   > - Component state represents internal data managed by a component that can change over time.
   > - Changes in state trigger re-renders of the component, ensuring the UI reflects the latest state values.
-  > **Usage:**
+  >   **Usage:**
   >
   > 1. **Import:** Import the `useState` Hook from React at the top of your functional component file.
   >
@@ -595,7 +626,7 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   > 1. **Calling the Hook:** Inside your functional component, call the `useState` Hook. It takes an initial state value (often null, an empty array, or an empty object) as an argument and returns an array with two elements:
   >    - **Current State:** The current value of the state variable.
   >    - **State Setter Function:** A function used to update the state.
-  > **Example:**
+  >      **Example:**
   >
   > ```jsx
   > import React, { useState } from "react";
@@ -617,11 +648,12 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >   );
   > }
   > ```
+  >
   > **Additional Considerations:**
   >
   > - Functional state updates using the setter function guarantee predictable state updates and prevent potential errors.
   > - You can call `useState` multiple times within a component to manage multiple state variables independently.
-  > **Further Resources:**
+  >   **Further Resources:**
   >
   > - React Hooks Documentation (`useState`):
   >
@@ -636,11 +668,11 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   > - Subscriptions (to events or data sources)
   > - Manual DOM manipulations (use sparingly)
   > - Timers (for scheduling actions)
-  > **Why Use `useEffect`?**
+  >   **Why Use `useEffect`?**
   >
   > - **Functional Component Suitability:** Enables side effects within functional components, previously only possible with lifecycle methods in class components.
   > - **Controlled Execution:** Allows you to specify when and how side effects should run.
-  > **Using `useEffect`:**
+  >   **Using `useEffect`:**
   >
   > 1. **Import:** Import the `useEffect` Hook from React at the top of your functional component file.
   >
@@ -651,15 +683,15 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >    ```
   >
   > 2. **Calling the Hook:** Call the `useEffect` Hook inside your functional component. It takes a callback function (the effect) and an optional dependency array as arguments.
-  > **The Effect Function:**
+  >    **The Effect Function:**
   >
   > - This function defines the actual side effect logic that you want to execute.
   > - It can access the component's props and state using the hook's arguments or closure.
-  > **Dependency Array (Optional):**
+  >   **Dependency Array (Optional):**
   >
   > - An optional array of dependencies specifies when the effect should re-run. The effect runs again whenever any of the dependencies in the array change.
   > - If no dependency array is provided, the effect runs after every render (similar to `componentDidMount` in class components).
-  > **Example (Fetching Data on Mount):**
+  >   **Example (Fetching Data on Mount):**
   >
   > ```jsx
   > import React, { useEffect } from "react";
@@ -686,11 +718,12 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >   );
   > }
   > ```
+  >
   > **Additional Considerations:**
   >
   > - The effect function can optionally return a cleanup function that runs before the component unmounts or before the effect runs again due to a dependency change. This is useful for cleaning up subscriptions, timers, or other side effects that should be stopped.
   > - Use `useEffect` judiciously, as excessive side effects can impact performance. Consider alternatives like derived state or custom hooks for complex logic.
-  > **Further Resources:**
+  >   **Further Resources:**
   >
   > - React Hooks Documentation (`useEffect`):
   >
@@ -701,7 +734,7 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >
   > - A mechanism for managing and sharing data across components in a React application without explicitly passing props down through the component tree (prop drilling).
   > - Established using `React.createContext` which returns a context object.
-  > **Using `useContext`:**
+  >   **Using `useContext`:**
   >
   > 1. **Import:** Import `useContext` from React at the top of your functional component file.
   >
@@ -710,7 +743,7 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >    ```
   >
   > 2. **Calling the Hook:** Call the `useContext` Hook within your functional component. It takes the context object (created with `React.createContext`) as an argument.
-  > **Example:**
+  >    **Example:**
   >
   > **1. Creating the Context:**
   >
@@ -760,11 +793,12 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >   );
   > }
   > ```
+  >
   > **Additional Considerations:**
   >
   > - Context updates trigger re-renders in all consumer components that use `useContext`. Optimize context usage to avoid unnecessary re-renders.
   > - Consider alternatives like `Redux` or `Zustand` for complex global state management needs.
-  > **Further Resources:**
+  >   **Further Resources:**
   >
   > - React Hooks Documentation (`useContext`):
   >
@@ -774,12 +808,12 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   > **What is a Reducer?**
   >
   > - A reducer function is a pure function that takes the current state and an action object as arguments, and returns a new state based on the action type and payload.
-  > **Why Use `useReducer`?**
+  >   **Why Use `useReducer`?**
   >
   > - **Complex State Management:** Suitable for managing intricate state logic involving multiple state values or interdependent updates.
   > - **Improved Readability:** Separates state update logic from the component, promoting cleaner and more maintainable code.
   > - **Performance Optimization:** Can potentially optimize performance in complex state scenarios by calculating minimal state updates.
-  > **Using `useReducer`:**
+  >   **Using `useReducer`:**
   >
   > 1. **Import:** Import `useReducer` from React at the top of your functional component file.
   >
@@ -790,7 +824,7 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   > 2. **Calling the Hook:** Call `useReducer` within your functional component. It takes two arguments:
   >    - **Reducer Function:** The function that defines how the state should be updated based on actions.
   >    - **Initial State:** The initial value of the state object.
-  > **Example:**
+  >      **Example:**
   >
   > ```jsx
   > import React, { useReducer } from "react";
@@ -824,11 +858,12 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >   );
   > }
   > ```
+  >
   > **Additional Considerations:**
   >
   > - Reducers are pure functions, ensuring predictable state updates based on the previous state and the dispatched action.
   > - You can combine `useReducer` with `useMemo` to optimize performance by memoizing the reducer function or parts of the state that don't need to be recalculated on every render.
-  > **Further Resources:**
+  >   **Further Resources:**
   >
   > - React Hooks Documentation (`useReducer`):
   >
@@ -839,11 +874,11 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >
   > - **Performance Optimization:** Prevents expensive function recreations on every render, especially when passed as props to child components.
   > - **Reference Equality Checks:** Ensures child components only re-render if the reference (memory location) of the callback function has actually changed, not just its content.
-  > **When to Use `useCallback`:**
+  >   **When to Use `useCallback`:**
   >
   > - Commonly used for callback functions passed as props to child components, especially when those functions rely on the component's state or props.
   > - Can also be used for memoizing expensive calculations or functions used within event handlers to avoid redundant computations.
-  > **Using `useCallback`:**
+  >   **Using `useCallback`:**
   >
   > 1. **Import:** Import `useCallback` from React at the top of your functional component file.
   >
@@ -854,7 +889,7 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   > 2. **Calling the Hook:** Call `useCallback` within your functional component. It takes two arguments:
   >    - **Callback Function:** The function you want to memoize.
   >    - **Dependency Array (Optional):** An optional array of dependencies that determine when the memoized function should be recreated. If no dependency array is provided, the memoized function will only be created once.
-  > **Example:**
+  >      **Example:**
   >
   > ```jsx
   > import React, { useCallback } from "react";
@@ -881,11 +916,12 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >   return <button onClick={props.handleClick}>Click from Child</button>;
   > }
   > ```
+  >
   > **Additional Considerations:**
   >
   > - `useMemo` is a similar hook that can be used to memoize the result of any value based on its dependencies. However, `useCallback` specifically returns a memoized function.
   > - Use `useCallback` judiciously, as excessive memoization can add complexity. Only memoize functions that are truly expensive to create or cause unnecessary re-renders in child components.
-  > **Further Resources:**
+  >   **Further Resources:**
   >
   > - React Hooks Documentation (`useCallback`):
   >
@@ -897,12 +933,12 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   > - **Direct DOM Access (Limited Use):** In rare cases, you might need to directly access or manipulate a DOM element from a functional component. Refs provide a way to store a reference to the DOM element.
   > - **Storing Mutable Values:** While state updates trigger re-renders, refs can hold mutable values that don't cause re-renders, useful for storing previous values or references across renders.
   > - **Focus Management:** You can use refs to manage focus on form elements or other interactive components.
-  > **Use Cases (Use with Caution):**
+  >   **Use Cases (Use with Caution):**
   >
   > - **Direct DOM manipulation (rarely recommended):** Due to potential performance issues and separation of concerns principles, it's generally recommended to handle UI updates declaratively using state and JSX.
   > - **Measuring DOM elements:** You can use a ref to store a DOM element and access its properties (e.g., width, height) later in your component.
   > - **Focus management:** Refs can be attached to form elements to programmatically focus or blur them.
-  > **Using `useRef`:**
+  >   **Using `useRef`:**
   >
   > 1. **Import:** Import `useRef` from React at the top of your functional component file.
   >
@@ -912,7 +948,7 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >
   > 2. **Calling the Hook:** Call `useRef` within your functional component. It returns a new ref object with a single property:
   >    - `.current`: Initially set to the value passed to `useRef` (often null or an empty object). You can assign values to `.current` later.
-  > **Example (Focusing an Input):**
+  >      **Example (Focusing an Input):**
   >
   > ```jsx
   > import React, { useRef } from "react";
@@ -934,11 +970,12 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >   );
   > }
   > ```
+  >
   > **Additional Considerations:**
   >
   > - Unlike state updates, changes to a ref's `.current` property won't trigger a re-render.
   > - Use refs cautiously for side effects or integrating with third-party libraries that rely on imperative DOM manipulation.
-  > **Further Resources:**
+  >   **Further Resources:**
   >
   > - React Hooks Documentation (`useRef`):
   >
@@ -949,11 +986,11 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >
   > - **Performance Optimization:** Prevents redundant calculations within components, especially when dealing with complex computations or data transformations.
   > - **Improved Efficiency:** Ensures the memoized value is only recalculated when its dependencies change, leading to smoother performance.
-  > **When to Use `useMemo`:**
+  >   **When to Use `useMemo`:**
   >
   > - Frequently used for memoizing expensive calculations or function calls that rely on the component's state or props.
   > - Can also be used to create derived data based on other state or props, preventing redundant computations on every render.
-  > **Using `useMemo`:**
+  >   **Using `useMemo`:**
   >
   > 1. **Import:** Import `useMemo` from React at the top of your functional component file.
   >
@@ -966,7 +1003,7 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   > 2. **Calling the Hook:** Call `useMemo` within your component. It takes two arguments:
   >    - **Calculation Function:** The function whose result you want to memoize.
   >    - **Dependency Array (Optional):** An array of values that the calculation depends on. If a dependency in the array changes, the memoized value will be recalculated. If no dependency array is provided, the value will be recalculated on every render.
-  > **Example (Memoizing a Complex Calculation):**
+  >      **Example (Memoizing a Complex Calculation):**
   >
   > ```jsx
   > import React, { useMemo } from "react";
@@ -991,11 +1028,12 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >   );
   > }
   > ```
+  >
   > **Additional Considerations:**
   >
   > - `useCallback` is a similar hook used for memoizing callback functions specifically.
   > - Use `useMemo` judiciously, as excessive memoization can add complexity. Only memoize values that are truly expensive to calculate and cause performance issues if recalculated frequently.
-  > **Further Resources:**
+  >   **Further Resources:**
   >
   > - React Hooks Documentation (`useMemo`):
   >
@@ -1007,15 +1045,15 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   > - **Code Reusability:** Custom hooks promote code reuse by encapsulating common functionalities that can be shared across multiple components.
   > - **Improved Organization:** They break down complex logic into smaller, more manageable units, enhancing code readability and maintainability.
   > - **State Management Abstraction:** Custom hooks can manage state logic for specific use cases, separating concerns and improving component clarity.
-  > **Creating `Custom Hooks`:**
+  >   **Creating `Custom Hooks`:**
   >
   > 1. **Functionality:** Define the functionality you want to encapsulate in the hook. This could involve state management using `useState` or side effects with `useEffect`.
   > 2. **Logic:** Implement the logic using React hooks and other JavaScript functionalities within the custom hook function.
-  > **Using `Custom Hooks`:**
+  >    **Using `Custom Hooks`:**
   >
-  > 1. **Import:** Import the custom hook file into the component where you want to use it.
-  > 2. **Call the Hook:** Call the custom hook function within your component, similar to how you use built-in hooks like `useState` or `useEffect`. The custom hook can return values or provide functions for managing state or side effects.
-  > **Example (Custom Hook for Form Handling):**
+  > 3. **Import:** Import the custom hook file into the component where you want to use it.
+  > 4. **Call the Hook:** Call the custom hook function within your component, similar to how you use built-in hooks like `useState` or `useEffect`. The custom hook can return values or provide functions for managing state or side effects.
+  >    **Example (Custom Hook for Form Handling):**
   >
   > **`useForm.js` (Custom Hook File):**
   >
@@ -1034,6 +1072,7 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >
   > export default useForm;
   > ```
+  >
   > **`MyForm.js` (Component Using the Hook):**
   >
   > ```jsx
@@ -1073,12 +1112,13 @@ In React, hooks are functions introduced in React 16.8 that allow you to "hook i
   >   );
   > }
   > ```
+  >
   > **Additional Considerations:**
   >
   > - Custom hooks can accept arguments to customize their behavior (e.g., initial state for `useForm`).
   > - They can return multiple values or functions depending on the encapsulated logic.
   > - Use custom hooks strategically to avoid over-engineering or creating unnecessary abstractions.
-  > **Further Resources:**
+  >   **Further Resources:**
   >
   > - React Hooks Documentation:
   >
