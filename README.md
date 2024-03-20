@@ -24,26 +24,80 @@ The topics are taken and article is generated based on roadmap listed on [https:
 
 ---
 
+# React Roadmap
+
+## Table of Contents
+
+- [Vite](#vite)
+- [Components](#components)
+  - [Functional Components](#Functional-Components)
+  - [JSX](#jsx)
+  - [Props](#props)
+  - [State](#state)
+  - [Conditional Rendering](#conditional-rendering)
+- [Rendering](#rendering)
+  - [Component Lifecycle](#component-lifecycle)
+  - [Lists and Props](#lists-and-props)
+  - [Render Props](#render-props)
+  - [Events](#events)
+  - [Higher Order Components and Functions](#higher-order-components-and-functions)
+- [Hooks](#hooks)
+  - [useState](#usestate)
+  - [useEffect](#useeffect)
+  - [useContext](#usecontext)
+  - [useReducer](#usereducer)
+  - [useCallback](#usecallback)
+  - [useRef](#useref)
+  - [useMemo](#usememo)
+  - [Custom Hooks](#custom-hooks)
+- [Routing](#routing)
+  - [React Router](#react-router)
+- [State Management](#state-management)
+  - [Zustand](#zustand)
+- [Styling](#styling)
+  - [Tailwind](#tailwind)
+  - [Bootstrap](#bootstrap)
+- [API Calls](#api-calls)
+  - [GraphQL](#graphql)
+  - [REST](#rest)
+- [Testing](#testing)
+  - [Jest](#jest)
+  - [React Testing Library](#react-testing-library)
+- [Frameworks](#frameworks)
+  - [Next.JS](#nextjs)
+  - [Vue.JS](#vuejs)
+- [Forms](#forms)
+  - [React Hook Form](#react-hook-form)
+- [Advanced Topics](#advanced-topics)
+  - [Suspense](#suspense)
+  - [Portals](#portals)
+  - [Error Boundaries](#error-boundaries)
+  - [Fiber Architecture](#fiber-architecture)
+- [Mobile](#mobile)
+  - [React Native](#react-native)
+
+---
+
 # Vite:
 
 Vite is a modern build tool specifically designed to **enhance the development experience** for front-end web applications. Here is the breakdown of information regarding vite.
 
 > **Focus:** Lightning-fast development experience with instant hot module replacement (HMR).
 >
-> > **Why Use It:**
-> >
-> > - **Blazing Speed:** Near-instantaneous server startup and hot module replacement for rapid development cycles.
-> > - **Simplicity:** Easy to set up and use, reducing configuration overhead.
-> > - **Modern Features:** Supports latest web technologies like TypeScript, JSX, and CSS preprocessors.
+> **Why Use It:**
 >
-> > **When to Use:**
-> >
-> > - Projects that prioritize development speed and a smooth workflow.
-> > - Modern web development using popular frameworks (React, Vue.js, Svelte).
+> - **Blazing Speed:** Near-instantaneous server startup and hot module replacement for rapid development cycles.
+> - **Simplicity:** Easy to set up and use, reducing configuration overhead.
+> - **Modern Features:** Supports latest web technologies like TypeScript, JSX, and CSS preprocessors.
 >
-> > **Official Documentation:**
-> >
-> > [Vite](https://vitejs.dev/)
+> **When to Use:**
+>
+> - Projects that prioritize development speed and a smooth workflow.
+> - Modern web development using popular frameworks (React, Vue.js, Svelte).
+>
+> **Official Documentation:**
+>
+> [Vite](https://vitejs.dev/)
 >
 > Vite offers a streamlined approach to front-end development, ideal for projects where development speed and a pleasant experience are paramount.
 
@@ -53,11 +107,13 @@ Vite is a modern build tool specifically designed to **enhance the development e
 
 - **Functional Components**
   > **Focus:** Simple, stateless UI building blocks that return JSX.
+  >
   > **Why Use Them:**
   >
   > - **Concise Syntax:** Easier to write and understand compared to class components.
   > - **Presentational Components:** Ideal for displaying data and don't require complex state management.
   > - **Reusable:** Can be easily reused throughout the application.
+  >
   >   **When to Use:**
   >
   > - Building simple UI components that focus on rendering.
